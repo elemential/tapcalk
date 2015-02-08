@@ -1,0 +1,24 @@
+﻿	<script>
+	function pie(text, number)
+	{
+		var tmp = new Array();
+		for (i = 0; i < text.length; i++)
+		{
+			tmp[i] = "['" + text[i] + "'," + number[i] + "],";
+		}
+
+		return tmp;
+	}
+	</script>
+	<script>
+	function line(text, number)
+	{
+		var tmp = new Array();
+		for (i = 0; i < text.length; i++)
+		{
+			tmp[i] = "['" + text[i] + "',[" + number[i] + "]],";
+		}
+
+		return tmp;
+	}
+	</script>
