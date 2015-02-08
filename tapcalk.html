@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <script>
         fome = {
-            'link' : ['LinkOne','LinkTwo',['name','one','two']],
-            'incl' : ['welcome','markdownr'],
+            'link' : ['','LinkTwo',['name','one','two']],
+            'incl' : ['home','markdownr'],
             'title' : "",
             'splashname': "Tapcalk SE",
             'extratitle' : " ",
             'navname' : "Tapcalk SE",
             'logos' : "",
-            'location':"incl/",
+            'location':"content/",
             'fab' :[true,'right','new','fn'],
 		    'primaryColor' : '#48F',
 			'secondaryColor' : '#f84',
@@ -22,12 +22,66 @@
         </script>
     </head>
     <body>
-       
+        <script>
+           setTimeout(function(){
+                goto('home');
+               
+     
+               $('core-header-panel[main]').prepend($('#superholder').html());
+               $('#superholder').html('');
+               
+               absd.onclick=function(){ setTimeout(function(){jonas.selected=absd.selected},100)}
+           },1500);
+            
+        </script>
+        <style>
+            body:not(.themeMoreThan0) paper-tabs{
+                opacity: 0.2;
+            }
+            core-header-panel[main] /deep/ #mainPanel {
+                 margin-left: -256px;
+                z-index: 999;
+            }
+           core-header-panel[drawer] /deep/ #mainPanel {
+               display:none;
+           }
+            html /deep/ #menuelements div{
+                margin-top: 50px;
+            }
+            paper-tabs#absd {
+                transition:opacity .4s;
+            background-color: #48F;
+            color: white;
+            box-shadow:2x 2px 5px #666; 
+            }
+            paper-tabs::shadow #selectionBar {
+                background-color: #f1f1f1;
+                height: 4px;
+            }
+            html /deep/ #outerContainer #dropShadow {
+                display: none;
+            }
+        </style>
+        <div id="superholder">
+           <paper-tabs id="absd" selected="0" >
+              <paper-tab>Tab 1</paper-tab>
+              <paper-tab>Tab 2</paper-tab>
+              <paper-tab>Tab 3</paper-tab>
+            </paper-tabs>
+
+            <core-pages selected="0" id="jonas">
+              <div>Page 1</div>
+              <div>Page 2</div>
+              <div>Page 3</div>
+            </core-pages>
+
+        </div>
         
         <fome-menu></fome-menu>
         <fome-element></fome-element>
         <splash-element></splash-element>
         <link rel="import" href="../../polyfome/include.html">
         <link rel="import" href="../../polyfome/elementile.html">
+        
     </body>
 </html>
