@@ -1,21 +1,4 @@
 
-/**
- * @author rontap
- * co-author: bobarna
-
- * package: rontap/MathNew
- * #CALKNEW.JS
- * #tapcalk.html
- * #canvas.html
- */
-
-/*
- * created at nov 9
- * compatible only with TapCalk5+
- * and RJSX 7.3+
- */
- 
-
 //PROGRAM
 //INITALIZING--------------------------------------------------------------------
 abc = ["a","b","c","d","e","f","g","h","i","j"];
@@ -38,7 +21,7 @@ histlength=0;//előzmények
 tprim=new Array();
 eventfire='';//a SZAMOLD-ra uteskor alkalmazza
 prt=new Array("H	Hidrogén","He	Hélium","Li	Lítium","Be	Berillium","B	Bór","C	Szén","N	Nitrogén","O	Oxigén","F	Fluor","Ne	Neon	","Na	Nátrium	","Mg	Magnézium	","Al	Alumínium	","Si	Szilícium","P	Foszfor","S	Kén","Cl	Klór","Ar	Argon","K	Kálium","Ca	Kálcium","Sc	Szkandium	","Ti	Titán	","V	Vanádium	","Cr	Króm	","Mn	Mangán	","Fe	Vas	","Co	Kobalt	","Ni	Nikkel	","Cu	Réz	","Zn	Cink	","Ga	 Gallium","Ge	Germánium	","As	Arzén	","Se	Szelén	","Br	Bróm	","Kr	Kripton	","Rb	Rubídium	","Sr	Stroncium	","Y	Ittrium	","Zr	Cirkónium	","Nb	Nióbium	","Mo	Molibdén	","Tc	Technécium	","Ru	Ruténium	","Rh	Ródium	","Pd	Palládium	","Ag	Ezüst	","Cd	Kadmium	","In	Indium	","Sn	Ón	","Sb	Antimon	","Te	Tellúr	","I	Jód	","Xe	Xenon	","Cs	Cézium	","Ba	Bárium	","La	Lantán	","Ce	Cérium	","Pr	Prazeodímium	","Nd	Neodímium	","Pm	Prométium	","Sm	Szamárium	","Eu	Európium	","Gd	Gadolínium	","Tb	Terbium	","Dy	Diszprózium	","Ho	Holmium	","Er	Erbium	","Tm	Túlium	","Yb	Itterbium	","Lu	Lutécium	","Hf	Hafnium	","Ta	Tantál	","W	Volfrám	","Re	Rénium	","Os	Ozmium	","Ir	Irídium	","Pt	Platina	","Au	Arany	","Hg	Higany	","Tl	Tallium	","Pb	Ólom	","Bi	Bizmut	","Po	Polónium	","At	Asztácium	","Rn	Radon	","Fr	Francium	","Ra	Rádium	","Ac	Aktínium	","Th	Tórium	","Pa	Protaktínium	","U	Urán	","Np	Neptúnium	","Pu	Plutónium	","Am	Amerícium	","Cm	Kűrium	","Bk	Berkélium	","Cf	Kalifornium	","Es	Einsteinium	","Fm	Fermium	","Md	Mendelévium	","No	Nobélium	","Lr	Laurencium	","Rf	Radzerfordium	","Db	Dubnium	","Sg	Sziborgium	","Bh	Borium	","Hs	Hasszium	","Mt	Meitnerium	","Ds	Darmstadtium	","Rg	Röntgenium	","Cn	Kopernícium	","Uut	Ununtrium	","Fl	Flerovium	","Uup	ununpentium	","Lv	Livermorium	","Uuh	Ununszeptium	","Uuo	Ununoktium	","Uue	Ununennium	","Ubn	Unbinilium	","Ubu	Unbiunium");
-function makeinput(mal,out) {//legeneralja az input mezőket
+/*function makeinput(mal,out) {//legeneralja az input mezőket
 for (i=1;i<=mal;i++)
 	{
 		
@@ -51,7 +34,7 @@ for (i=1;i<=out;i++)
 		window['output'+i]='<span class="outputtext" ran="'+Math.random()+'" id="ouo'+i+'"></span>';
 	}
 }
-
+*/
 
 function fillt(c) {
 
