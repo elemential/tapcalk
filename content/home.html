@@ -1,1 +1,68 @@
-HEllo there
+<div class="away card" id="main_screen">
+    <h1 class="c">Üdv a Tapcalk SE-ben!</h1>
+    <div id="tc_functions">
+        <table>
+            <tr>
+                <td>
+                    <h2>Alapműveletek</h2>
+                    <span>négy alapművelet</span>
+                    <span>hatványozás, gyökvonás</span>
+                    <span>kiemelés, beszorzás</span>
+                    <span>tömeges összeadás</span>
+                </td>
+                <td>
+                    <h2>Geometria</h2>
+                    <span>szögfüggvények</span>
+                    <span>rajzoló</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Alapműveletek</h2>
+                    <span>négy alapművelet</span>
+                    <span>hatványozás, gyökvonás</span>
+                    <span>kiemelés, beszorzás</span>
+                    <span>tömeges összeadás</span>
+                </td>
+                <td>
+                    <h2>Geometria</h2>
+                    <span>szögfüggvények</span>
+                    <span>rajzoló</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<style>
+    #main_screen {
+        width:900px;
+        margin-left:calc(50% - 450px);
+    }
+    #tc_functions td{
+       /* border: 1px solid red;*/
+        display: inline-block;
+         width: 50%;
+        vertical-align: top;
+    }
+    #tc_functions td h2 {
+        background: #f84;
+        padding:5px 5px;
+        color:white;
+        margin-bottom: 10px;
+    }
+    #tc_functions td span {
+        margin: 3px;
+        padding:2px;
+        cursor: pointer;
+    }
+    #tc_functions td span:hover {
+        background:blue;
+    }
+    #tc_functions table {
+        width: 100%;
+        border-spacing: 25px;
+    }
+    td span {
+        display: block;
+    }
+</style>
